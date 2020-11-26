@@ -3,6 +3,8 @@ name: End to end
 on:
   push:
     branches: [ master, fix-false-positive-duplicate-translations ] #<-- replace transport-agency-name by the name of the agency/publisher
+  pull_request:
+    branches: [ master ]
 jobs:
   run-on-data:
     runs-on: ubuntu-latest
